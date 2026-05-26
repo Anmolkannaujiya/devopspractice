@@ -14,7 +14,7 @@ function CompaniesPage() {
   useEffect(() => {
     fetchCompanies();
   }, []);
-
+console.log(companies)
   const fetchCompanies = async () => {
     try {
       const response = await api.get("/companies");

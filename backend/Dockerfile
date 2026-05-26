@@ -19,6 +19,8 @@ COPY . .
 # Generate the Prisma client
 RUN npx prisma generate
 
+RUN npx prisma db seed
+
 # Expose the port the backend app runs on
 EXPOSE 5000
 
